@@ -1,0 +1,59 @@
+:root {
+    --content-bg-color: rgba(6,7,8,0.85)
+}
+
+body {
+    background-image: url(https://background-tiles.com/overview/mixed-colors/textures/large/5014.png);
+    background-size: 189px auto;
+    font-family: Rokkitt;
+}
+header{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline;
+    text-shadow:
+        3px 3px 0 #000,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
+             color: white;
+} 
+.container {
+    display: grid;
+    grid-template-columns: [sidebar] 1fr [main] 100fr;
+    gap: 10px;
+    grid-template-areas: "sidebar main";
+}
+
+a:visited {
+    color: red;
+}
+a:link {
+    color: pink;
+}
+
+header{
+    display:inline-block;
+    background-color: var(--content-bg-color);
+    margin-bottom: 10px;
+    color: white;
+}
+.title{
+    grid-area: main;
+    background-color: var(--content-bg-color);
+    padding: 12px;
+    color: white;
+}
+.sidebar{
+    grid-area: sidebar;
+    padding: 12px;
+    background-color: var(--content-bg-color);
+    color: white;
+}
+.content{
+    grid-area: main;
+    background-color: var(--content-bg-color);
+    padding: 12px;
+    color: white;
+}
